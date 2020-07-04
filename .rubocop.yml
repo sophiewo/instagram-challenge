@@ -4,8 +4,8 @@
 # Here are some additions to Scaffolint for Rails apps.
 #
 # Enable the Rails rules included in the rubocop-rails gem.
-require:
-  - rubocop-rails
+  Documentation:
+    Enabled: false
 
 # Exclusions
 # ==========
@@ -26,6 +26,10 @@ AllCops:
     - 'config/**/*'
     - 'db/**/*'
     - 'vendor/**/*'
+    - '/bin/setup'
+    - '/bin/bundle'
+
+
 
 #    _____               ____ ____        __     _         __
 #   / ___/ _____ ____ _ / __// __/____   / /    (_)____   / /_
